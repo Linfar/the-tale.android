@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TheTale</string>
+    <string name="background">the-tale.org</string>
+    <string name="update_button">update</string>
+    <string name="_exp_to_lvl_label">Exp to level</string>
+    <string name="_name_label">Name:</string>
+    <string name="_race_label">Race</string>
+    <string name="_exp_label">Exp</string>
+    <string name="_hp_label">Health</string>
+    <string name="_max_hp_label">Max health</string>
+    <string name="_power_label">Power</string>
+    <string name="default_blank_value">blank</string>
+    <string name="title_activity_journal_list">Journal</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

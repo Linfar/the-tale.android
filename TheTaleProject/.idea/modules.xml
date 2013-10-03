@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DataDroid/DataDroid.iml" filepath="$PROJECT_DIR$/DataDroid/DataDroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TheTale/TheTale.iml" filepath="$PROJECT_DIR$/TheTale/TheTale.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TheTaleProject.iml" filepath="$PROJECT_DIR$/TheTaleProject.iml" />
+    </modules>
+  </component>
+</project>
+
