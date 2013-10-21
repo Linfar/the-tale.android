@@ -1,0 +1,222 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".MainActivity$DiaryFragment"
+    android:id="@+id/diary_activity_layout">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:id="@+id/game_activity_frame">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:columnCount="4"
+                android:rowCount="8"
+                android:id="@+id/game_activity_frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/_name_label"
+                    android:id="@+id/_name_label"
+                    android:layout_column="0"
+                    android:paddingLeft="20dp"
+                    android:layout_row="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/default_blank_value"
+                    android:id="@+id/name_value"
+                    android:layout_gravity="left|top"
+                    android:layout_column="1"
+                    android:paddingLeft="20dp"
+                    android:layout_row="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/_race_label"
+                    android:id="@+id/_race_label"
+                    android:layout_column="0"
+                    android:paddingLeft="20dp"
+                    android:layout_row="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/default_blank_value"
+                    android:id="@+id/race_value"
+                    android:layout_column="1"
+                    android:paddingLeft="20dp"
+                    android:layout_row="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/_exp_label"
+                    android:id="@+id/_exp_label"
+                    android:layout_column="0"
+                    android:paddingLeft="20dp"
+                    android:layout_row="2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/default_blank_value"
+                    android:id="@+id/exp_value"
+                    android:layout_column="1"
+                    android:paddingLeft="20dp"
+                    android:layout_row="2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/_exp_to_lvl_label"
+                    android:id="@+id/_exp_to_lvl_label"
+                    android:layout_column="0"
+                    android:paddingLeft="20dp"
+                    android:layout_row="3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/default_blank_value"
+                    android:id="@+id/exp_to_lvl_value"
+                    android:layout_column="1"
+                    android:paddingLeft="20dp"
+                    android:layout_row="3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/_hp_label"
+                    android:id="@+id/_hp_label"
+                    android:layout_column="0"
+                    android:paddingLeft="20dp"
+                    android:layout_row="4"  />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/default_blank_value"
+                    android:id="@+id/hp_value"
+                    android:layout_column="1"
+                    android:paddingLeft="20dp"
+                    android:layout_row="4"  />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/_max_hp_label"
+                    android:id="@+id/_max_hp_label"
+                    android:layout_column="0"
+                    android:paddingLeft="20dp"
+                    android:layout_row="5"  />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/default_blank_value"
+                    android:id="@+id/max_hp_value"
+                    android:layout_column="1"
+                    android:paddingLeft="20dp"
+                    android:layout_row="5"  />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/_power_label"
+                    android:id="@+id/_power_label"
+                    android:layout_column="0"
+                    android:paddingLeft="20dp"
+                    android:layout_row="6"  />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/default_blank_value"
+                    android:id="@+id/power_value"
+                    android:layout_column="1"
+                    android:paddingLeft="20dp"
+                    android:layout_row="6"
+                    android:singleLine="false" />
+
+            </GridLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/default_blank_value"
+                    android:id="@+id/current_action_value"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_column="2"
+                    android:layout_row="0"/>
+
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/journal_list"
+                    android:layout_column="2"
+                    android:layout_row="1"
+                    android:layout_rowSpan="7"
+                    android:layout_marginLeft="10dp">
+                </ListView>
+            </LinearLayout>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/update_button"
+                android:id="@+id/update_button"
+                android:layout_gravity="right|top"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>
